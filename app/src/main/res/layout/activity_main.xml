@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Set Up Profile"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+         />
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/textColor"
+        android:layout_centerHorizontal="true"
+        android:text="Hey! We need few details from you before you start sharing on Momento"
+        android:layout_below="@+id/textView1"
+        />
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/user"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView8"
+        />
+    <EditText
+        android:id="@+id/setUp_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/text_background"
+        android:ems="10"
+        android:textColor="@color/textColor"
+        android:hint="Name"
+        android:textColorHint="@color/textColor"
+        android:inputType="textPersonName"
+        android:layout_below="@id/user_image"
+        android:padding="16dp"
+        />
+
+    <EditText
+        android:id="@+id/setUp_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/text_background"
+        android:ems="10"
+        android:textColor="@color/textColor"
+        android:hint="Email"
+        android:textColorHint="@color/textColor"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/setUp_name"
+        android:padding="16dp"
+        />
+
+    <EditText
+        android:id="@+id/setUp_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/text_background"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:inputType="textPassword"
+        android:layout_below="@id/setUp_email"
+        android:padding="16dp"
+        />
+
+    <Button
+        android:id="@+id/setUp_dateofBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/text_background"
+        android:drawableRight="@drawable/ic_date_"
+        android:drawableTint="@color/textColor"
+        android:ems="10"
+        android:padding="16dp"
+        android:layout_below="@+id/setUp_password"
+        android:text="Date of Birth"
+        android:textColor="@color/textColor"
+        />
+
+    <RadioGroup
+        android:id="@+id/setUp_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/text_background"
+        android:orientation="horizontal"
+        android:layout_below="@+id/setUp_dateofBirth"
+        android:padding="16dp" >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="Female"
+            android:textColor="@color/textColor"
+            android:textStyle="bold">
+
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="Male"
+            android:textColor="@color/textColor"
+            android:textStyle="bold">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/setUp_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:padding="20dp"
+
+        android:text="Get Set Go"
+        android:textColor="@color/white"
+        android:layout_below="@+id/setUp_radioGroup"
+         />
+
+</RelativeLayout>
